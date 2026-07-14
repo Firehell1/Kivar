@@ -1343,6 +1343,17 @@ footer {
 }
 
 @media (max-width: 768px) {
+  /* Hide ecosystem suffix on mobile to prevent header overflow */
+  .logo-subtext {
+    display: none;
+  }
+  
+  /* Scale wallet button on mobile */
+  .connect-btn {
+    padding: 8px 16px;
+    font-size: 0.7rem;
+  }
+
   /* Disable custom cursor on mobile */
   .custom-cursor-dot, .custom-cursor-ring {
     display: none !important;
