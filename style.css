@@ -69,6 +69,10 @@
   background: var(--accent-cyan);
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--bg-primary);
   color: var(--text-secondary);
@@ -1468,6 +1472,33 @@ footer {
   
   .form-group.full-width {
     grid-column: span 1;
+  }
+
+  /* Reduce padding on layout containers to prevent horizontal scrolling */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Prevent horizontal scroll overflows on key cards and components */
+  .pipeline-card {
+    padding: 24px 16px !important;
+  }
+  
+  .contact-form-panel {
+    padding: 24px 16px !important;
+  }
+  
+  .portal-card {
+    padding: 32px 20px !important;
+  }
+
+  .game-card {
+    padding: 24px 16px !important;
+  }
+  
+  .email-box {
+    padding: 12px 10px !important;
+    font-size: 0.8rem !important;
   }
 }
 
